@@ -14,15 +14,15 @@
         <div class="logo font-sans font-medium text-2xl">
             SMITH REALTY
         </div>
-        <div class="header_menu  space-x-14 content-end">
-            <a class="hover:bg-violet-600" href="#">Listing</a>
-            <a class="" href="#">Home</a>
-            <a class="" href="#">Proprety</a>
-            <a class="" href="#">Pages</a>
-        </div>
+            <ul class="header_menu w-auto flex justify-around">
+                <li><a class="hover:bg-blue-700 hover:text-white p-5" href="#">Home</a></li>
+                <li><a class="hover:bg-blue-700 hover:text-white p-5" href="#">Listing</a></li>
+                <li><a class="hover:bg-blue-700 hover:text-white p-5" href="#">Property</a></li>
+                <li><a class="hover:bg-blue-700 hover:text-white p-5" href="#">Pages</a></li>
+            </ul>
         <div class="header_account flex justify-between space-x-10">
-            <div class="account border w-8 h-8 border-blue-700 rounded-full self-center"><i class="fa-solid fa-heart text-blue-700 p-2"></i></div>
-            <div class="account border w-8 h-8 border-blue-700 rounded-full"><i class="fa-solid fa-user text-blue-700 p-2"></i></div>
+            <div class="account border w-8 h-8 border-blue-700 rounded-full self-center hover:bg-blue-700"><i class="fa-solid fa-heart text-blue-700 p-2 hover:text-white"></i></div>
+            <div class="account border w-8 h-8 border-blue-700 rounded-full hover:bg-blue-700"><i class="fa-solid fa-user text-blue-700 p-2 hover:text-white"></i></div>
         </div>
     </header>
     @yield('content')
