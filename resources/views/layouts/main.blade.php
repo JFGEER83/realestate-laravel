@@ -10,19 +10,19 @@
      @vite('resources/css/app.css')
 </head>
 <body>
-    <header>
-        <div class="logo">
-            Smith Realty
+    <header class="container-xl mx-auto flex justify-around mt-5">
+        <div class="logo font-sans font-medium text-2xl">
+            SMITH REALTY
         </div>
-        <div class="header_menu">
-            <a href="#">Home</a>
-            <a href="#">Listing</a>
-            <a href="#">Proprety</a>
-            <a href="#">Pages</a>
+        <div class="header_menu  space-x-14 content-end">
+            <a class="hover:bg-violet-600" href="#">Listing</a>
+            <a class="" href="#">Home</a>
+            <a class="" href="#">Proprety</a>
+            <a class="" href="#">Pages</a>
         </div>
-        <div class="header_account">
-            <div class="account"><i class="fa-solid fa-heart"></i></div>
-            <div class="account"><i class="fa-solid fa-user"></i></div>
+        <div class="header_account flex justify-between space-x-10">
+            <div class="account border w-8 h-8 border-blue-700 rounded-full self-center"><i class="fa-solid fa-heart text-blue-700 p-2"></i></div>
+            <div class="account border w-8 h-8 border-blue-700 rounded-full"><i class="fa-solid fa-user text-blue-700 p-2"></i></div>
         </div>
     </header>
     @yield('content')
